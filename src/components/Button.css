@@ -1,0 +1,24 @@
+
+.choice-btn {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+  }
+  
+  .choice-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .choice-img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 5px;
+  }
+  
+  .choice-name {
+    color: #333;
+  }
+  

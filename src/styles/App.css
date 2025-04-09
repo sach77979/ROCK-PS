@@ -1,0 +1,112 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Main Game Container */
+.game-container {
+  text-align: center;
+  background: linear-gradient(to right, #ff9a9e, #fad0c4);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Scoreboard */
+.scoreboard {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  padding: 15px 30px;
+  border-radius: 15px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 20px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Choices Button Container */
+.choices {
+  display: flex;
+  gap: 15px;
+}
+
+/* Button Styles */
+.choice-btn {
+  border: none;
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.choice-btn:hover {
+  background: #ffd700;
+  transform: scale(1.1);
+}
+
+/* Images inside Buttons */
+.choice-btn img {
+  width: 80px;
+  height: 80px;
+  display: block;
+  margin: 5px auto;
+}
+
+/* Results Section */
+.results {
+  margin-top: 30px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.results h3 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.results img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.results h2 {
+  margin-top: 15px;
+  color: #ffcc00;
+  font-size: 28px;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .choices {
+    flex-direction: column;
+  }
+  
+  .choice-btn {
+    width: 90%;
+  }
+  
+  .results img {
+    width: 80px;
+    height: 80px;
+  }
+}
